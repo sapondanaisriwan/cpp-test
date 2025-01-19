@@ -92,9 +92,9 @@ namespace Project2 {
 			this->label1->AutoSize = true;
 			this->label1->Location = System::Drawing::Point(43, 123);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(115, 16);
+			this->label1->Size = System::Drawing::Size(113, 16);
 			this->label1->TabIndex = 3;
-			this->label1->Text = L"Nong me0w YaYa";
+			this->label1->Text = L"Nong me0w YuYu";
 			this->label1->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
 			// 
 			// MyForm
