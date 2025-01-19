@@ -37,6 +37,7 @@ namespace Project2 {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::CheckBox^ checkBox1;
 	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Label^ label1;
 	protected:
 
 	private:
@@ -55,6 +56,7 @@ namespace Project2 {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -85,11 +87,22 @@ namespace Project2 {
 			this->button2->Text = L"button2";
 			this->button2->UseVisualStyleBackColor = true;
 			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(43, 123);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(55, 16);
+			this->label1->TabIndex = 3;
+			this->label1->Text = L"Khunma";
+			this->label1->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(282, 253);
+			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->checkBox1);
 			this->Controls->Add(this->button1);
@@ -100,5 +113,7 @@ namespace Project2 {
 
 		}
 #pragma endregion
+	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
 	};
 }
